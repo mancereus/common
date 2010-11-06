@@ -1,0 +1,25 @@
+<project name="common" default="dist">
+	<!--    <property name="java-build.src-dir" location="src"/> -->
+	<property name="asl.dir" value="../../apps/control/ant-script-library" />
+	<property name="repo-ivy.retrieve-pattern" value="${repo-ivy.lib-dir}/[conf]/[artifact]-[revision].[ext]" />
+	<property name="repo-ivy.settings-file" value="./mysettings.xml" />
+
+	<import file="${asl.dir}/asl-repo-ivy.xml" />
+	<import file="${asl.dir}/asl-java-build.xml" /> 
+	<import file="${asl.dir}/asl-java-test.xml" />
+	<import file="${asl.dir}/asl-java-report.xml" />
+	<import file="${asl.dir}/asl-java-package.xml" />
+
+
+	<target name="gen" description="generate">
+		<path id="gen.classpath">
+			<fileset dir="libsafe" includes="*.jar" />
+			<pathelement location="src/main/resources" />
+		</path>
+		<java classname="DomainModel" classpathref="gen.classpath" fork="true">
+			<arg value="workflow/SchemaGenerator.mwe2" />
+			<arg value="-p" />
+			<arg value="modelFile=src/main/resoruces/Example.schema" />
+		</java>
+	</target>
+</project>

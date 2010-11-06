@@ -1,0 +1,49 @@
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+	<info organisation="de.db12" module="common" />
+
+	<configurations>
+		<conf name="runtime" description="compile and runtime" />
+		<conf name="buildtime" description="only compile, not runtime" />
+		<conf name="test" description="test libraries" />
+	</configurations>
+	<dependencies>
+		<!-- base util libs; ref="latest.integration" for latest version -->
+		<dependency org="com.google.guava" name="guava" rev="r07" conf="runtime->default" />
+		<!-- DI -->
+		<dependency org="com.google.inject" name="guice" rev="2.0" conf="runtime->default" />
+		<dependency org="com.google.inject.extensions" name="guice-multibindings" rev="2.0" conf="runtime->default" />
+		<dependency org="com.googlecode.rocoto" name="rocoto" rev="4.0" conf="runtime->default" />
+		<dependency org="org.mybatis" name="mybatis-guice" rev="1.0.0-RC3" conf="runtime->default" />
+		<!-- logging -->
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1" conf="runtime->default" />
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.26"  conf="runtime->default"/>
+		<dependency org="ch.qos.logback" name="logback-core" rev="0.9.26" conf="runtime->default"/>
+		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.6.1" conf="runtime->default"/>
+		<!-- persistence -->
+		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0" conf="runtime->default" />
+		<dependency org="org.mybatis" name="mybatis" rev="3.0.2" conf="runtime->default" />
+		<!-- communication import export convert -->
+<!--		<dependency org="org.apache.camel" name="camel-guice"  rev="latest.integration" conf="runtime->default" >-->
+<!--			<exclude name="com.springsource.javax.annotation" />-->
+<!--		</dependency>-->
+		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.3.1" conf="runtime->default" />
+		<dependency org="net.sf.dozer" name="dozer" rev="5.3.0" conf="runtime->default">
+			<exclude name="commons-logging" />
+		</dependency>
+		<dependency org="net.sf.flexjson" name="flexjson" rev="2.0" conf="runtime->default"/>
+		<!-- GWT -->
+		<dependency org="com.google.gwt" name="gwt" rev="2.1.0" conf="runtime->default" />
+		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="2.0" conf="runtime->default" />
+		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1" conf="runtime->default" />
+		<!-- test -->
+		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />
+		<dependency org="org.jbehave" name="jbehave-core" rev="3.1" conf="test->default" />
+		<dependency org="org.jbehave" name="jbehave-guice" rev="3.1" conf="test->default" />
+
+		<!--  command line -->
+<!--		<dependency org="org.fusesource.jansi" name="jansi" rev="1.4" conf="runtime->default" />-->
+<!--		<dependency org="jline" name="jline" rev="0.9.9" conf="runtime->default" />-->
+		
+	</dependencies>
+</ivy-module>
