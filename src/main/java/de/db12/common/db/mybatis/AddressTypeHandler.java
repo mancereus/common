@@ -26,7 +26,7 @@ import org.apache.ibatis.type.TypeHandler;
 
 import com.google.inject.Inject;
 
-import de.db12.common.entity.Address;
+import de.db12.common.db.entity.Address;
 
 /**
  * 

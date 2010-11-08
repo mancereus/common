@@ -18,8 +18,6 @@
 		<dependency org="com.sun.jersey" name="jersey-json" rev="1.5-ea03" conf="runtime->default" />
 		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.5-ea03" conf="runtime->default" />
 		
-		<!--  snapshot needed -->
-<!--		<dependency org="org.mybatis" name="mybatis-guice" rev="latest.integration" conf="runtime->default" />-->
 		<!-- logging -->
 		<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1" conf="runtime->default" />
 		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.26"  conf="runtime->default"/>
@@ -28,29 +26,30 @@
 		<!-- persistence -->
 		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0" conf="runtime->default" />
 		<dependency org="org.mybatis" name="mybatis" rev="3.0.2" conf="runtime->default" />
-		<!-- communication import export convert -->
-<!--		<dependency org="org.apache.camel" name="camel-guice"  rev="latest.integration" conf="runtime->default" >-->
-<!--			<exclude name="com.springsource.javax.annotation" />-->
-<!--		</dependency>-->
+		<!-- cglib used for lazy loading -->
+		<dependency org="cglib" name="cglib-full" rev="2.0.2" conf="runtime->default" />
+		<!-- cache implementation -->
+		<dependency org="org.mybatis.caches" name="mybatis-ehcache" rev="1.0.0-RC1" conf="runtime->default" />
+		<!--  snapshot needed in libsafe -->
+<!--		<dependency org="org.mybatis" name="mybatis-guice" rev="latest.integration" conf="runtime->default" />-->
+
 		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.3.1" conf="runtime->default" />
 		<dependency org="net.sf.dozer" name="dozer" rev="5.3.0" conf="runtime->default">
 			<exclude name="commons-logging" />
 		</dependency>
 		<dependency org="net.sf.flexjson" name="flexjson" rev="2.0" conf="runtime->default"/>
+		
 		<!-- GWT -->
 		<dependency org="com.google.gwt" name="gwt" rev="2.1.0" conf="runtime->default" />
 		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="2.0" conf="runtime->default" />
 		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1" conf="runtime->default" />
 		<dependency org="org.eclipse.jetty" name="jetty-servlet" rev="8.0.0.M1" conf="runtime->default" />
 		<dependency org="org.eclipse.jetty" name="jetty-webapp" rev="8.0.0.M1" conf="runtime->default" />
+		
 		<!-- test -->
 		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />
 		<dependency org="org.jbehave" name="jbehave-core" rev="3.1" conf="test->default" />
 		<dependency org="org.jbehave" name="jbehave-guice" rev="3.1" conf="test->default" />
-
-		<!--  command line -->
-<!--		<dependency org="org.fusesource.jansi" name="jansi" rev="1.4" conf="runtime->default" />-->
-<!--		<dependency org="jline" name="jline" rev="0.9.9" conf="runtime->default" />-->
 		
 	</dependencies>
 </ivy-module>

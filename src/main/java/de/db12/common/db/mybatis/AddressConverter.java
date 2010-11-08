@@ -19,7 +19,7 @@ import java.text.ParseException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import de.db12.common.entity.Address;
+import de.db12.common.db.entity.Address;
 
 /**
  * 
