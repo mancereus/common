@@ -29,8 +29,29 @@
 	<classpathentry kind="lib" path="lib/runtime/guice-multibindings-2.0.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/hsqldb-2.0.0.jar"/>
 	<classpathentry kind="lib" path="libsafe/mybatis-guice-1.0.0-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="libsafe/dbentitygenerator.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jetty-security-8.0.0.M1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jetty-servlet-8.0.0.M1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-core-1.5-ea03.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-server-1.5-ea03.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-core-asl-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-jaxrs-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-mapper-asl-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-guice-1.5-ea03.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-json-1.5-ea03.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jetty-webapp-8.0.0.M1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jetty-xml-8.0.0.M1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.xtext.example.domainmodel"/>
+	<classpathentry kind="lib" path="lib/runtime/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-core-asl-1.5.5.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-jaxrs-1.5.5.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-mapper-asl-1.5.5.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-xc-1.5.5.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jaxb-api-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jaxb-impl-2.1.12.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/stax-api-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

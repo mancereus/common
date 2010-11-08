@@ -14,12 +14,12 @@
 	<target name="gen" description="generate">
 		<path id="gen.classpath">
 			<fileset dir="libsafe" includes="*.jar" />
-			<pathelement location="src/main/resources" />
+			<pathelement location="." />
 		</path>
 		<java classname="DomainModel" classpathref="gen.classpath" fork="true">
-			<arg value="workflow/SchemaGenerator.mwe2" />
+			<arg value="workflow.SchemaGenerator.mwe2" />
 			<arg value="-p" />
-			<arg value="modelFile=src/main/resoruces/Example.schema" />
+			<arg value="modelFile=src/main/resources/Example.schema" />
 		</java>
 	</target>
 </project>

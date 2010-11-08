@@ -16,7 +16,7 @@ public class GuiceMain {
 		     * instance. Most applications will call this method exactly once, in their
 		     * main() method.
 		     */
-		    Injector injector = Guice.createInjector(new GuiceModule());
+		    Injector injector = Guice.createInjector(new CommonModule());
 		    RealBillingService service = injector.getInstance(RealBillingService.class);
 		    service.log.debug("test");
 			 SqlSessionFactory sessionFactory = injector.getInstance(SqlSessionFactory.class);

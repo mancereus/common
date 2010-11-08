@@ -15,7 +15,7 @@ import de.db12.common.db.mybatis.BlogMapper;
 import de.db12.common.entity.Blog;
 import de.db12.common.guice.log.Slf4jTypeListener;
 
-public class GuiceModule extends AbstractModule {
+public class CommonModule extends AbstractModule {
 	Class<? extends Provider<DataSource>> dataSourceProviderClass = UnpooledDataSourceProvider.class;
 
 	@Override
@@ -28,8 +28,7 @@ public class GuiceModule extends AbstractModule {
 		// .annotatedWith(com.google.inject.name.Names.named("mybatis.configuration.lazyLoadingEnabled"))
 		// .to(true);
 		bindConstant().annotatedWith(
-				Names.named("mybatis.environment.id"))
-				.to("development");
+				Names.named("mybatis.environment.id")).to("development");
 //		bindConstant().annotatedWith(Names.named("JDBC.driver")).to(
 //				"com.mysql.jdbc.Driver");
 //		bindConstant().annotatedWith(Names.named("JDBC.url")).to(
