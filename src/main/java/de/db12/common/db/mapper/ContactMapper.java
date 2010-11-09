@@ -17,11 +17,13 @@ package de.db12.common.db.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import de.db12.common.db.entity.Contact;
 
 public interface ContactMapper extends CRUDMapper<Contact> {
 
-	List<Contact> selectAllOrdered(String colname);
+	List<Contact> selectAllOrdered(@Param("colname") String colname);
 
 	List<Contact> selectAllWithProfile();
 

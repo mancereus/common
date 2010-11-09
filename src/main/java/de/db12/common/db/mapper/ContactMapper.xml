@@ -62,7 +62,7 @@
 
 	<select id="selectAllOrdered" parameterType="java.lang.String" resultMap="contactMap">
 		<include refid="select" />
-		//ORDER BY ${1}
+		ORDER BY ${colname}
 	</select>
 
 

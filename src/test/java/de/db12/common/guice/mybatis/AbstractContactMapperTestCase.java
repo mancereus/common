@@ -42,6 +42,11 @@ public abstract class AbstractContactMapperTestCase {
 	}
 
 	@Test
+	public void deleteContact() throws Exception {
+		this.contactService.delete(1);
+	}
+
+	@Test
 	public void selectAllContacts() throws Exception {
 		List<Contact> contacts = this.contactService.getAll();
 		assert contacts.size() > 0 : "Expected not empty contact table";
