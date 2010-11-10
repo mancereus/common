@@ -23,7 +23,7 @@ public class DeleteData {
 
 			Ebean.createUpdate(Order.class, "delete from order").execute();
 
-			Ebean.createUpdate(Customer.class, "delete from CustomerDto")
+			Ebean.createUpdate(Customer.class, "delete from Customer")
 					.execute();
 
 			Ebean.createUpdate(Address.class, "delete from address").execute();

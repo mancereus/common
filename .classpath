@@ -43,7 +43,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/h2-1.2.145.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/persistence-api-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/mysql-connector-java-5.1.13.jar"/>
-	<classpathentry exported="true" kind="lib" path="libsafe/jpa-annotations-source.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jcl-over-slf4j-1.6.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/activation-1.1.jar"/>

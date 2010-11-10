@@ -2,6 +2,8 @@ package de.scoopgmbh.common.db.data.query;
 
 import java.util.List;
 
+import org.junit.Before;
+import org.junit.Test;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.EbeanServerFactory;
@@ -11,27 +13,26 @@ import com.avaje.ebean.config.ServerConfig;
 import de.scoopgmbh.common.db.data.Order;
 import de.scoopgmbh.common.db.setup.Setup;
 
-
 public class ProgrammaticallyConfigureBootup {
 
-	public static void main(String[] args) {
-		
-		
+	@Before
+	public void setup() {
+
 		// programmatically configure including
 		// DDL generation and execution
 		ServerConfig c = new ServerConfig();
 		c.setName("h2");
-		
+
 		// load settings from ebean.properties
 		// as a starting point
-		//c.loadFromProperties();
-		
+		// c.loadFromProperties();
+
 		c.setDdlGenerate(false);
 		c.setDdlRun(false);
-		
+
 		// set as the 'default' EbeanServer
 		c.setDefaultServer(true);
-		
+
 		DataSourceConfig dsConfig = new DataSourceConfig();
 		dsConfig.setUrl("jdbc:h2:database/test");
 		dsConfig.setUsername("sa");
@@ -40,22 +41,17 @@ public class ProgrammaticallyConfigureBootup {
 		c.setDataSourceConfig(dsConfig);
 
 		EbeanServerFactory.create(c);
-		
-		
+
 		// load some test data...
 		Setup.resetData();
-		
-		ProgrammaticallyConfigureBootup me = new ProgrammaticallyConfigureBootup();
-		me.runSimpleQuery();
 	}
 
-	
-	
-	private void runSimpleQuery() {
+	@Test
+	public void testSimpleQuery() {
 
 		List<Order> l0 = Ebean.find(Order.class).findList();
 		System.out.println(l0);
-		
+
 	}
-	
+
 }

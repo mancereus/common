@@ -1,4 +1,4 @@
-package app.order.test;
+package de.scoopgmbh.common.db.mapping;
 
 import junit.framework.Assert;
 

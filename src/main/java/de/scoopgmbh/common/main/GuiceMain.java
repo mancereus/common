@@ -11,11 +11,7 @@ import de.scoopgmbh.common.service.RealContactService;
 
 public class GuiceMain {
 	public static void main(String[] args) {
-		/*
-		 * Guice.createInjector() takes your Modules, and returns a new Injector
-		 * instance. Most applications will call this method exactly once, in
-		 * their main() method.
-		 */
+
 		Injector injector = Guice.createInjector(new DBConnectionModule(),
 				new ConfigureEbeanModule(), new LoggingModule());
 		RealContactService service = injector
