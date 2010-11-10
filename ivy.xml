@@ -1,6 +1,6 @@
 <ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
-	<info organisation="de.db12" module="common" />
+	<info organisation="de.scoopgmbh" module="common" />
 
 	<configurations>
 		<conf name="runtime" description="compile and runtime" />
@@ -26,12 +26,12 @@
 		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.6.1" conf="runtime->default"/>
 		
 		<!-- persistence -->
-		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0" conf="runtime->default" />
 		<!-- cglib used for lazy loading -->
-		<dependency org="cglib" name="cglib-full" rev="2.0.2" conf="runtime->default" />
-		<dependency org="javax.persistence" name="persistence-api" rev="1.0" conf="runtime->default" />
 		<dependency org="org.avaje" name="ebean" rev="2.7.1" conf="runtime->default" />
+
+		<!--  driver -->
 <!--		<dependency org="com.h2database" name="h2" rev="1.2.145" conf="runtime->default" />-->
+		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0" conf="runtime->default" />
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.13"/>
 		
 		
