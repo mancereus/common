@@ -1,22 +1,13 @@
-package de.scoopgmbh.common.db.data;
+package de.scoopgmbh.common.db.dto;
 
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.Version;
+import java.io.Serializable;
 
-@Entity
-@Inheritance
-@DiscriminatorColumn(length = 14)
-public class Vehicle {
+public class VehicleDto implements Serializable {
 
-	@Id
 	Integer id;
 
 	String license;
 
-	@Version
 	Integer version;
 
 	public Integer getId() {

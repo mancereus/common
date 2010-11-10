@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="true">
+	<contextName>common</contextName>
+	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%-4relative [%thread] %-5level %class - %msg%n</pattern>
+		</layout>
+	</appender>
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="Console" />
+	</root>
+</configuration>
+

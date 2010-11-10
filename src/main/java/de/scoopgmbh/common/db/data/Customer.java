@@ -13,7 +13,7 @@ import com.avaje.ebean.validation.Length;
 import com.avaje.ebean.validation.NotNull;
 
 /**
- * Customer entity bean.
+ * CustomerDto entity bean.
  */
 @Entity
 @Table(name="o_customer")

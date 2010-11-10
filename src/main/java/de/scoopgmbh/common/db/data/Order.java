@@ -17,7 +17,7 @@ import com.avaje.ebean.annotation.SqlSelect;
 import com.avaje.ebean.validation.NotNull;
 
 /**
- * Order entity bean.
+ * OrderDto entity bean.
  */
 @Entity
 @Table(name = "o_order")

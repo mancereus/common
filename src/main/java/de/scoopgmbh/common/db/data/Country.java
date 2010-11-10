@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import com.avaje.ebean.validation.Length;
 
 /**
- * Country entity bean.
+ * CountryDto entity bean.
  */
 @Entity
 @Table(name="o_country")

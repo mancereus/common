@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Address</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.AddressDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Car</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.CarDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Country</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.CountryDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Customer</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.CustomerDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Domain</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.DomainDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Order</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.OrderDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.OrderDetail</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.OrderDetailDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Product</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.ProductDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Truck</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.TruckDto</class-b>
+	</mapping>
+	<mapping>
+		<class-a>de.scoopgmbh.common.db.data.Vehicle</class-a>
+		<class-b>de.scoopgmbh.common.db.dto.VehicleDto</class-b>
+	</mapping>
+</mappings>

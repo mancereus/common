@@ -13,7 +13,7 @@ import com.avaje.ebean.annotation.SqlSelect;
 import com.avaje.ebean.validation.Length;
 
 /**
- * Product entity bean.
+ * ProductDto entity bean.
  */
 @Entity
 @Table(name="o_product")

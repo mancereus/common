@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 
 /**
- * Order Detail entity bean.
+ * OrderDto Detail entity bean.
  */
 @Entity
 @Table(name="o_order_detail")

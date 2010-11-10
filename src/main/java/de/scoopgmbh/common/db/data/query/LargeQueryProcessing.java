@@ -79,7 +79,7 @@ public class LargeQueryProcessing {
 		 * <p>
 		 * This order is then NOT added to the list so that
 		 * it does not consume memory. A new 'persistence context'
-		 * is used for each Order.
+		 * is used for each OrderDto.
 		 * </p>
 		 * <p>
 		 * I sometimes describe this as ...

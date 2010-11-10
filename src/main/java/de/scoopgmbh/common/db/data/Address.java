@@ -13,7 +13,7 @@ import com.avaje.ebean.annotation.CreatedTimestamp;
 import com.avaje.ebean.validation.Length;
 
 /**
- * Address entity bean.
+ * AddressDto entity bean.
  */
 @Entity
 @Table(name="o_address")

@@ -20,6 +20,8 @@
         <ibiblio name="sun" m2compatible="true" root="http://download.java.net/maven/2/"/>
 		<ibiblio name="snapshots" m2compatible="true" root="https://oss.sonatype.org/content/repositories/snapshots/"/>"
 <!--		<ibiblio name="avaje.org" m2compatible="true" root="http://www.avaje.org/archiva/repository/internal/"/>"-->
+		<ibiblio name="gilead" m2compatible="true" root="https://gilead.svn.sourceforge.net/svnroot/gilead/gilead/maven-repo/"/>"
+
         <ibiblio name="maven2" m2compatible="true" />
         
         <chain name="default" returnFirst="true">
@@ -31,7 +33,8 @@
             <resolver ref="google"/>
             <resolver ref="jboss"/>
             <resolver ref="snapshots"/>
-            <resolver ref="guiceyfruit"/>
+<!--            <resolver ref="gilead"/>-->
+<!--            <resolver ref="guiceyfruit"/>-->
 <!--            <resolver ref="avaje.org"/>-->
             <resolver ref="sun"/>
         </chain>
