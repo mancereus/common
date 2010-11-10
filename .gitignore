@@ -3,3 +3,7 @@ bin/
 build/
 gradle-app.setting
 lib/
+data/
+database/
+logs/
+target/
