@@ -3,7 +3,6 @@ package de.scoopgmbh.common.db.setup;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import com.avaje.ebean.Ebean;
 
 import de.scoopgmbh.common.db.data.Address;

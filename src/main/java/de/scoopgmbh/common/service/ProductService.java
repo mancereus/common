@@ -4,31 +4,30 @@ import java.util.List;
 
 import org.slf4j.Logger;
 
-import com.avaje.ebean.Ebean;
+import com.avaje.ebean.EbeanServer;
 import com.avaje.ebean.annotation.Transactional;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
-import de.scoopgmbh.common.db.data.Order;
+import de.scoopgmbh.common.db.data.Product;
 import de.scoopgmbh.common.guice.log.InjectLogger;
 
 @Singleton
-public class RealContactService {
+public class ProductService {
 	@InjectLogger
 	Logger log;
 
 	@Inject
-	public RealContactService() {
-	}
+	EbeanServer ebean;
 
 	@Transactional
-	public void insert(final Order order) {
+	public void insert(final Product product) {
 		// TODO: insert order
 	}
 
 	@Transactional
-	public List<Order> findAllOrder() {
-		return Ebean.find(Order.class).findList();
+	public List<Product> findAllProducts() {
+		return ebean.find(Product.class).findList();
 
 	}
 

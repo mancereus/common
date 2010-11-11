@@ -1,4 +1,4 @@
-package de.scoopgmbh.common.main;
+package de.scoopgmbh.common.appl;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;

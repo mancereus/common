@@ -17,6 +17,7 @@
         <ibiblio name="guiceyfruit" m2compatible="true" root="http://guiceyfruit.googlecode.com/svn/repo/releases/"/>
         <ibiblio name="gwtp" m2compatible="true" root="http://dep.gwt-platform.googlecode.com/hg/release-repository"/>
         <ibiblio name="jboss" m2compatible="true" root="https://repository.jboss.org/nexus/content/repositories/releases/"/>
+        <ibiblio name="jboss.old" m2compatible="true" root="http://repository.jboss.org/maven2/"/>
         <ibiblio name="sun" m2compatible="true" root="http://download.java.net/maven/2/"/>
 		<ibiblio name="snapshots" m2compatible="true" root="https://oss.sonatype.org/content/repositories/snapshots/"/>"
 <!--		<ibiblio name="avaje.org" m2compatible="true" root="http://www.avaje.org/archiva/repository/internal/"/>"-->
@@ -32,6 +33,7 @@
             <resolver ref="maven2"/>
             <resolver ref="google"/>
             <resolver ref="jboss"/>
+            <resolver ref="jboss.old"/>
             <resolver ref="snapshots"/>
 <!--            <resolver ref="gilead"/>-->
 <!--            <resolver ref="guiceyfruit"/>-->

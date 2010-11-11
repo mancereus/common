@@ -44,6 +44,7 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/persistence-api-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/mysql-connector-java-5.1.13.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jcl-over-slf4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/runtime/gwt-log-3.0.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/activation-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-core-asl-1.5.5.jar"/>

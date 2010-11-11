@@ -1,4 +1,4 @@
-package de.scoopgmbh.common.main;
+package de.scoopgmbh.common.appl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
