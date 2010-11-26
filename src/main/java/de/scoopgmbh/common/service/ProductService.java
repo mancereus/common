@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 
+import com.avaje.ebean.Ebean;
 import com.avaje.ebean.EbeanServer;
 import com.avaje.ebean.annotation.Transactional;
 import com.google.inject.Inject;
@@ -26,9 +27,16 @@ public class ProductService {
 	}
 
 	@Transactional
-	public List<Product> findAllProducts() {
-		return ebean.find(Product.class).findList();
+	public static List<Product> findAllProducts() {
+		return Ebean.find(Product.class).findList();
 
 	}
 
+	public void persist(Product product) {
+		ebean.save(product);
+	}
+
+	public void remove(Product product) {
+		ebean.delete(product);
+	}
 }

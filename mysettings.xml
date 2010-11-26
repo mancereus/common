@@ -22,6 +22,7 @@
 		<ibiblio name="snapshots" m2compatible="true" root="https://oss.sonatype.org/content/repositories/snapshots/"/>"
 <!--		<ibiblio name="avaje.org" m2compatible="true" root="http://www.avaje.org/archiva/repository/internal/"/>"-->
 		<ibiblio name="gilead" m2compatible="true" root="https://gilead.svn.sourceforge.net/svnroot/gilead/gilead/maven-repo/"/>"
+		<ibiblio name="sfeir.gwtp" m2compatible="true" root="http://code.google.com/p/sfeir/source/browse/repository/"/>"
 
         <ibiblio name="maven2" m2compatible="true" />
         
@@ -34,6 +35,7 @@
             <resolver ref="google"/>
             <resolver ref="jboss"/>
             <resolver ref="jboss.old"/>
+            <resolver ref="sfeir.gwtp"/>
             <resolver ref="snapshots"/>
 <!--            <resolver ref="gilead"/>-->
 <!--            <resolver ref="guiceyfruit"/>-->

@@ -13,132 +13,131 @@ import javax.persistence.Version;
  * OrderDto Detail entity bean.
  */
 @Entity
-@Table(name="o_order_detail")
+@Table(name = "o_order_detail")
 public class OrderDetail {
 
-    @Id
-    Integer id;
+	@Id
+	Integer id;
 
-    Integer orderQty;
+	Integer orderQty;
 
-    Integer shipQty;
+	Integer shipQty;
 
-    Timestamp cretime;
+	Timestamp cretime;
 
-    @Version
-    Timestamp updtime;
+	@Version
+	Timestamp updtime;
 
-    @ManyToOne(cascade=CascadeType.ALL)
-    Order order;
+	@ManyToOne(cascade = CascadeType.ALL)
+	Order order;
 
-    @ManyToOne
-    Product product;
+	@ManyToOne
+	Product product;
 
-    public OrderDetail() {
-    }
-    
-    public OrderDetail(Product product, Integer orderQty){
-    	this.product = product;
-    	this.orderQty = orderQty;
-    }
+	public OrderDetail() {
+	}
 
-    /**
-     * Return id.
-     */    
-    public Integer getId() {
-  	    return id;
-    }
+	public OrderDetail(Product product, Integer orderQty) {
+		this.product = product;
+		this.orderQty = orderQty;
+	}
 
-    /**
-     * Set id.
-     */    
-    public void setId(Integer id) {
-  	    this.id = id;
-    }
+	/**
+	 * Return id.
+	 */
+	public Integer getId() {
+		return id;
+	}
 
-    /**
-     * Return order qty.
-     */    
-    public Integer getOrderQty() {
-  	    return orderQty;
-    }
+	/**
+	 * Set id.
+	 */
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    /**
-     * Set order qty.
-     */    
-    public void setOrderQty(Integer orderQty) {
-  	    this.orderQty = orderQty;
-    }
+	/**
+	 * Return order qty.
+	 */
+	public Integer getOrderQty() {
+		return orderQty;
+	}
 
-    /**
-     * Return ship qty.
-     */    
-    public Integer getShipQty() {
-  	    return shipQty;
-    }
+	/**
+	 * Set order qty.
+	 */
+	public void setOrderQty(Integer orderQty) {
+		this.orderQty = orderQty;
+	}
 
-    /**
-     * Set ship qty.
-     */    
-    public void setShipQty(Integer shipQty) {
-  	    this.shipQty = shipQty;
-    }
+	/**
+	 * Return ship qty.
+	 */
+	public Integer getShipQty() {
+		return shipQty;
+	}
 
-    /**
-     * Return cretime.
-     */    
-    public Timestamp getCretime() {
-  	    return cretime;
-    }
+	/**
+	 * Set ship qty.
+	 */
+	public void setShipQty(Integer shipQty) {
+		this.shipQty = shipQty;
+	}
 
-    /**
-     * Set cretime.
-     */    
-    public void setCretime(Timestamp cretime) {
-  	    this.cretime = cretime;
-    }
+	/**
+	 * Return cretime.
+	 */
+	public Timestamp getCretime() {
+		return cretime;
+	}
 
-    /**
-     * Return updtime.
-     */    
-    public Timestamp getUpdtime() {
-  	    return updtime;
-    }
+	/**
+	 * Set cretime.
+	 */
+	public void setCretime(Timestamp cretime) {
+		this.cretime = cretime;
+	}
 
-    /**
-     * Set updtime.
-     */    
-    public void setUpdtime(Timestamp updtime) {
-  	    this.updtime = updtime;
-    }
+	/**
+	 * Return updtime.
+	 */
+	public Timestamp getUpdtime() {
+		return updtime;
+	}
 
-    /**
-     * Return order.
-     */    
-    public Order getOrder() {
-  	    return order;
-    }
+	/**
+	 * Set updtime.
+	 */
+	public void setUpdtime(Timestamp updtime) {
+		this.updtime = updtime;
+	}
 
-    /**
-     * Set order.
-     */    
-    public void setOrder(Order order) {
-  	    this.order = order;
-    }
+	/**
+	 * Return order.
+	 */
+	public Order getOrder() {
+		return order;
+	}
 
-    /**
-     * Return product.
-     */    
-    public Product getProduct() {
-  	    return product;
-    }
+	/**
+	 * Set order.
+	 */
+	public void setOrder(Order order) {
+		this.order = order;
+	}
 
-    /**
-     * Set product.
-     */    
-    public void setProduct(Product product) {
-  	    this.product = product;
-    }
+	/**
+	 * Return product.
+	 */
+	public Product getProduct() {
+		return product;
+	}
 
+	/**
+	 * Set product.
+	 */
+	public void setProduct(Product product) {
+		this.product = product;
+	}
 
 }
