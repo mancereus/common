@@ -37,7 +37,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-webapp-8.0.0.M1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-xml-8.0.0.M1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/ebean-2.7.1.jar" sourcepath="C:/sde/apps/ebean-2.7.1/ebean-2.7.1-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/persistence-api-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/mysql-connector-java-5.1.13.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jcl-over-slf4j-1.6.1.jar"/>
@@ -58,5 +57,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0-2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/runtime/ebean-2.7.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
