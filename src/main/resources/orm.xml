@@ -2,7 +2,7 @@
 <entity-mappings version="1.0" xmlns="http://java.sun.com/xml/ns/persistence/orm"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_1_0.xsd">
 
-<package>de.scoopgmbh.common.db.data</package>
+<package>de.db12.common.db.data</package>
 
 <entity class="app.data.Order">
 	<sql-select name="simple.sql">

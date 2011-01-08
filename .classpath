@@ -45,6 +45,8 @@
 	<classpathentry kind="lib" path="lib/runtime/json-20090211.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/validation-api-1.0.0.GA.jar"/>
 	<classpathentry kind="lib" path="libsafe/ojdbc14-10.2.0.3.0.jar"/>
+	<classpathentry kind="lib" path="libsafe/spiffy-with_source-all-0.05.jar"/>
+	<classpathentry kind="lib" path="libsafe/SuperCSV-with_src-1.52.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/activation-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-core-asl-1.5.5.jar"/>
@@ -55,7 +57,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/jaxb-impl-2.1.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0-2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0.1.jar"/>
-     <classpathentry exported="true" kind="con"
-         path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
