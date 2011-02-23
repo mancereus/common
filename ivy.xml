@@ -6,59 +6,61 @@
 		<conf name="runtime" description="compile and runtime" />
 		<conf name="buildtime" description="only compile, not runtime" />
 		<conf name="test" description="test libraries" />
+		<conf name="sources" description="source zips" />
 	</configurations>
-	<dependencies>
+	<dependencies defaultconfmapping="runtime->default">
 		<!-- base util libs; ref="latest.integration" for latest version -->
-		<dependency org="com.google.guava" name="guava" rev="r07" conf="runtime->default" />
+		<dependency org="com.google.guava" name="guava" rev="r08"/>
 		<!-- DI -->
-		<dependency org="com.google.inject" name="guice" rev="2.0" conf="runtime->default" />
-		<dependency org="com.google.inject.extensions" name="guice-multibindings" rev="2.0" conf="runtime->default" />
-		<dependency org="com.googlecode.rocoto" name="rocoto" rev="4.0" conf="runtime->default" />
-		<dependency org="com.sun.jersey" name="jersey-server" rev="1.5-ea03" conf="runtime->default" />
-		<dependency org="com.sun.jersey" name="jersey-json" rev="1.5-ea03" conf="runtime->default" />
-		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.5-ea03" conf="runtime->default" />
+		<dependency org="com.google.inject" name="guice" rev="3.0-rc2"  />
+		<dependency org="com.google.inject.extensions" name="guice-multibindings" rev="3.0-rc2"  />
+		<dependency org="com.google.inject.extensions" name="guice-persist" rev="3.0-rc2"  />
+		<dependency org="com.googlecode.rocoto" name="rocoto" rev="4.0"  />
+		<dependency org="com.sun.jersey" name="jersey-server" rev="1.5-ea03"  />
+		<dependency org="com.sun.jersey" name="jersey-json" rev="1.5-ea03"  />
+		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.5-ea03"  />
 		
 		<!-- logging -->
-		<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1" conf="runtime->default" />
-		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.26"  conf="runtime->default"/>
-		<dependency org="ch.qos.logback" name="logback-core" rev="0.9.26" conf="runtime->default"/>
-		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.6.1" conf="runtime->default"/>
-		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.6.1" conf="runtime->default"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1"  />
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.26"  />
+		<dependency org="ch.qos.logback" name="logback-core" rev="0.9.26" />
+		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.6.1" />
+		<dependency org="org.slf4j" name="jcl-over-slf4j" rev="1.6.1" />
 		
 		<!-- persistence -->
 		<!-- cglib used for lazy loading -->
-		<dependency org="org.avaje" name="ebean" rev="2.7.2" conf="runtime->default" />
+		<dependency org="org.avaje" name="ebean" rev="2.7.2"  conf="runtime->default;sources"  />
 
 		<!--  driver -->
-<!--		<dependency org="com.h2database" name="h2" rev="1.2.145" conf="runtime->default" />-->
-		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0" conf="runtime->default" />
+<!--		<dependency org="com.h2database" name="h2" rev="1.2.145"  />-->
+		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0"  />
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.13"/>
 		
 		
-		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.3.1" conf="runtime->default" />
-		<dependency org="net.sf.dozer" name="dozer" rev="5.3.0" conf="runtime->default">
+		<dependency org="com.thoughtworks.xstream" name="xstream" rev="1.3.1"  />
+		<dependency org="net.sf.dozer" name="dozer" rev="5.3.0" >
 			<exclude name="commons-logging" />
 		</dependency>
-		<dependency org="net.sf.flexjson" name="flexjson" rev="2.0" conf="runtime->default"/>
+		<dependency org="net.sf.flexjson" name="flexjson" rev="2.0" />
 		
 		<!-- GWT -->
-		<dependency org="com.google.gwt" name="gwt" rev="2.1.0" conf="runtime->default" />
-		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="2.0" conf="runtime->default" />
-		<dependency org="com.google.code.gwt-log" name="gwt-log" rev="3.0.1" conf="runtime->default" />
-<!--		<dependency org="com.gwtplatform" name="gwtp" rev="0.5-SNAPSHOT" conf="runtime->default" />-->
-		<dependency org="org.json" name="json" rev="20090211" conf="runtime->default" />
-		<dependency org="javax.validation" name="validation-api" rev="1.0.0.GA" conf="runtime->default" />
+		<dependency org="com.google.gwt" name="gwt" rev="2.1.0"  />
+		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="3.0-rc2"  />
+		<dependency org="com.google.code.gwt-log" name="gwt-log" rev="3.0.1"  />
+<!--		<dependency org="com.gwtplatform" name="gwtp" rev="0.5-SNAPSHOT"  />-->
+		<dependency org="org.json" name="json" rev="20090211"  />
+		<dependency org="javax.validation" name="validation-api" rev="1.0.0.GA"  />
 		
-		<!-- <dependency org="net.sf.gilead" name="gilead-core" rev="1.3.2" conf="runtime->default" >
+		<!-- <dependency org="net.sf.gilead" name="gilead-core" rev="1.3.2"  >
 			<exclude org="org.springframework" />
 			<exclude name="hibernate" />
 			<exclude name="commons-logging" />
 			<exclude name="log4j" />
 		</dependency> -->
 		<!-- web server -->
-		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1" conf="runtime->default" />
-		<dependency org="org.eclipse.jetty" name="jetty-servlet" rev="8.0.0.M1" conf="runtime->default" />
-		<dependency org="org.eclipse.jetty" name="jetty-webapp" rev="8.0.0.M1" conf="runtime->default" />
+		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1"  />
+		<dependency org="org.eclipse.jetty" name="jetty-servlet" rev="8.0.0.M1"  />
+		<dependency org="org.eclipse.jetty" name="jetty-webapp" rev="8.0.0.M1"  />
 
 		<!-- test -->
 		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />
