@@ -2,7 +2,6 @@ package de.db12.common.db.data;
 
 import java.sql.Date;
 import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -11,7 +10,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 import com.avaje.ebean.annotation.Sql;
 import com.avaje.ebean.annotation.SqlSelect;
 import com.avaje.ebean.validation.NotNull;
@@ -21,8 +19,7 @@ import com.avaje.ebean.validation.NotNull;
  */
 @Entity
 @Table(name = "o_order")
-@Sql(select = {
-		@SqlSelect(name = "test", query = "select id, status from o_customer u", tableAlias = "u"),
+@Sql(select = { @SqlSelect(name = "test", query = "select id, status from o_customer u", tableAlias = "u"),
 		@SqlSelect(name = "test2", extend = "test", where = "u.status = :status") })
 public class Order extends Domain {
 

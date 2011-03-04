@@ -1,6 +1,7 @@
-package de.db12.common.web;
+package de.db12.common.web.guice;
 
 import com.google.inject.servlet.ServletModule;
+import de.db12.common.web.GuiceServlet;
 
 public class GuiceServletModule extends ServletModule {
 	@Override

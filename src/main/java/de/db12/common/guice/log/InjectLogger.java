@@ -1,7 +1,6 @@
 package de.db12.common.guice.log;
 
 import static java.lang.annotation.ElementType.FIELD;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;

@@ -1,25 +1,23 @@
 package de.db12.common.db.data;
 
 import java.sql.Timestamp;
-
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
-
 import com.avaje.ebean.annotation.CreatedTimestamp;
 
 @MappedSuperclass
 public class Domain {
 
-    @Id
-    private Integer id;
+	@Id
+	private Integer id;
 
-    @CreatedTimestamp
-    private Timestamp cretime;
+	@CreatedTimestamp
+	private Timestamp cretime;
 
-    @Version
-    private Timestamp updtime;
-    
+	@Version
+	private Timestamp updtime;
+
 	public Integer getId() {
 		return id;
 	}
@@ -43,5 +41,5 @@ public class Domain {
 	public void setUpdtime(Timestamp updtime) {
 		this.updtime = updtime;
 	}
-    
+
 }

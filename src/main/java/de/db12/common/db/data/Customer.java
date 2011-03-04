@@ -1,14 +1,12 @@
 package de.db12.common.db.data;
 
 import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
 import com.avaje.ebean.annotation.EnumMapping;
 import com.avaje.ebean.validation.Length;
 import com.avaje.ebean.validation.NotNull;

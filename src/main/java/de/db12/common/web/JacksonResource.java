@@ -8,9 +8,8 @@ import javax.ws.rs.core.MediaType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * The Jersey Jackson Resource itself. Note that this class is a POJO - it does
- * not need to know anything about Guice. Although, if we wanted to Inject
- * members using Guice, we could!
+ * The Jersey Jackson Resource itself. Note that this class is a POJO - it does not need to know anything about Guice. Although, if we wanted to Inject members
+ * using Guice, we could!
  */
 @Path("/jackson")
 public class JacksonResource {
@@ -22,8 +21,7 @@ public class JacksonResource {
 	}
 
 	/**
-	 * A static inner class result object; it's only "static inner" for
-	 * simplicity - really, this could be any POJO bean that you desire.
+	 * A static inner class result object; it's only "static inner" for simplicity - really, this could be any POJO bean that you desire.
 	 */
 	@XmlRootElement
 	public static class Greeting {

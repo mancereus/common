@@ -18,6 +18,5 @@ public class Truck extends Vehicle {
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-	
-	
+
 }

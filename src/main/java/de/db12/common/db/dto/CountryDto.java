@@ -2,8 +2,7 @@ package de.db12.common.db.dto;
 
 import java.io.Serializable;
 
-
-public class CountryDto implements Serializable{
+public class CountryDto implements Serializable {
 
 	String code;
 

@@ -2,10 +2,8 @@ package de.db12.common.guice.test;
 
 import java.util.List;
 import java.util.Properties;
-
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.junit.runners.model.InitializationError;
-
 import com.google.inject.Injector;
 import com.google.inject.Module;
 

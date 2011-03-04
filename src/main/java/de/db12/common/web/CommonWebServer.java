@@ -1,17 +1,15 @@
 package de.db12.common.web;
 
 import java.util.EnumSet;
-
 import javax.servlet.DispatcherType;
-
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.bio.SocketConnector;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.webapp.WebAppContext;
-
 import com.google.inject.servlet.GuiceFilter;
+import de.db12.common.web.guice.GuiceServletConfig;
 
 public class CommonWebServer {
 
@@ -27,10 +25,8 @@ public class CommonWebServer {
 		connector.setAcceptors(10);
 		server.setConnectors(new Connector[] { connector });
 
-		ServletContextHandler context = new ServletContextHandler(server, "/",
-				ServletContextHandler.NO_SESSIONS);
-		context.addFilter(GuiceFilter.class, "/*",
-				EnumSet.allOf(DispatcherType.class));
+		ServletContextHandler context = new ServletContextHandler(server, "/", ServletContextHandler.NO_SESSIONS);
+		context.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
 		context.addEventListener(new GuiceServletConfig());
 		// context.addServlet(EmptyServlet.class, "/");
 		context.addServlet(DefaultServlet.class, "/");
@@ -55,8 +51,7 @@ public class CommonWebServer {
 		// mBeanContainer.start();
 
 		try {
-			System.out
-					.println(">>> STARTING EMBEDDED JETTY SERVER, PRESS ANY KEY TO STOP");
+			System.out.println(">>> STARTING EMBEDDED JETTY SERVER, PRESS ANY KEY TO STOP");
 			server.start();
 			System.in.read();
 			System.out.println(">>> STOPPING EMBEDDED JETTY SERVER");

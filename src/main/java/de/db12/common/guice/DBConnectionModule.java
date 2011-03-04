@@ -1,4 +1,4 @@
-package de.db12.common.appl;
+package de.db12.common.guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
@@ -10,8 +10,7 @@ public class DBConnectionModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		// persistence
-		bindConstant().annotatedWith(Names.named("mybatis.environment.id")).to(
-				"development");
+		bindConstant().annotatedWith(Names.named("mybatis.environment.id")).to("development");
 		// bindConstant().annotatedWith(Names.named("JDBC.driver")).to(
 		// "com.mysql.jdbc.Driver");
 		// bindConstant().annotatedWith(Names.named("JDBC.url")).to(

@@ -2,12 +2,10 @@ package de.db12.common.db.data;
 
 import java.sql.Timestamp;
 import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Version;
-
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.annotation.CreatedTimestamp;
 import com.avaje.ebean.annotation.Sql;

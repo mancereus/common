@@ -3,13 +3,11 @@ package de.db12.common.appl;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
 import org.hsqldb.Server;
 
 public class HSQLDBMain {
 
-	public static void main(String[] args) throws ClassNotFoundException,
-			SQLException {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
 		// 'Server' is a class of HSQLDB representing
 		// the database server
@@ -36,8 +34,7 @@ public class HSQLDBMain {
 			Connection connection = null;
 			try {
 				Class.forName("org.hsqldb.jdbcDriver");
-				connection = DriverManager.getConnection(
-						"jdbc:hsqldb:hsql://localhost/test-db", "sa", "");
+				connection = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/test-db", "sa", "");
 
 				// Here we run a few SQL statements to see if
 				// everything is working.
@@ -46,12 +43,8 @@ public class HSQLDBMain {
 				// once again, insert some data and then read it
 				// with SELECT query.
 				// connection.prepareStatement("drop table testtable;").execute();
-				connection.prepareStatement(
-						"create table contact ( id INTEGER, "
-								+ "name VARCHAR(255) );").execute();
-				connection.prepareStatement(
-						"insert into contact(id, name) "
-								+ "values (1, 'testvalue');").execute();
+				connection.prepareStatement("create table contact ( id INTEGER, " + "name VARCHAR(255) );").execute();
+				connection.prepareStatement("insert into contact(id, name) " + "values (1, 'testvalue');").execute();
 
 			} finally {
 				// Closing the connection

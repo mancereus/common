@@ -1,7 +1,6 @@
 package de.db12.common.db.data;
 
 import java.sql.Timestamp;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
