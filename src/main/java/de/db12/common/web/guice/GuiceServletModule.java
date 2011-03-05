@@ -8,5 +8,6 @@ public class GuiceServletModule extends ServletModule {
 	protected void configureServlets() {
 		super.configureServlets();
 		serve("/test/*").with(GuiceServlet.class);
+		serve("/sample").with(GuiceServlet.class);
 	}
 }

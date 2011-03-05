@@ -4,8 +4,8 @@ import java.util.List;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import de.db12.common.db.data.Product;
-import de.db12.common.guice.DozerBeanMappingModule;
 import de.db12.common.guice.EbeanConfigurationModule;
+import de.db12.common.guice.dozer.DozerBeanMappingModule;
 import de.db12.common.guice.log.LoggingModule;
 import de.db12.common.service.ProductService;
 

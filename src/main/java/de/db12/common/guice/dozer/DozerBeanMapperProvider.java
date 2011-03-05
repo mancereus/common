@@ -1,4 +1,4 @@
-package de.db12.common.guice;
+package de.db12.common.guice.dozer;
 
 import org.dozer.DozerBeanMapperSingletonWrapper;
 import org.dozer.Mapper;

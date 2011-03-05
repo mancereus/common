@@ -41,22 +41,23 @@
 			<exclude name="commons-logging" />
 		</dependency>
 		<dependency org="net.sf.flexjson" name="flexjson" rev="2.0" />
-		<dependency org="com.sun.jersey" name="jersey-server" rev="1.5-ea03"  />
-		<dependency org="com.sun.jersey" name="jersey-json" rev="1.5-ea03"  />
-		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.5-ea03"  />
-		
+		<dependency org="com.sun.jersey" name="jersey-core" rev="1.6-ea05"  />
+		<dependency org="com.sun.jersey" name="jersey-server" rev="1.6-ea05"  />
+		<dependency org="com.sun.jersey" name="jersey-json" rev="1.6-ea05"  />
+		<dependency org="com.sun.jersey.contribs" name="jersey-guice" rev="1.6-ea05"  />
+		<dependency org="javax.ws.rs" name="jsr311-api" rev="1.1.1"  />
 		<!-- GWT -->
 		<dependency org="com.google.gwt" name="gwt" rev="2.2.0"  />
-		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="3.0-rc2"  />
+		<dependency org="com.google.inject.extensions" name="guice-servlet" rev="3.0-rc2" conf="runtime->default;sources" />
 		<dependency org="com.google.code.gwt-log" name="gwt-log" rev="3.0.1"  />
 		<dependency org="com.gwtplatform" name="gwtp" rev="0.6-SNAPSHOT"/>
 		<dependency org="org.json" name="json" rev="20090211"  />
 		<dependency org="javax.validation" name="validation-api" rev="1.0.0.GA"  />
 		
 		<!-- web server -->
-		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1"  />
-		<dependency org="org.eclipse.jetty" name="jetty-servlet" rev="8.0.0.M1"  />
-		<dependency org="org.eclipse.jetty" name="jetty-webapp" rev="8.0.0.M1"  />
+		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.0.0.M1" conf="runtime->default;sources"  />
+		<dependency org="org.eclipse.jetty" name="jetty-servlet" rev="8.0.0.M1" conf="runtime->default;sources"  />
+		<dependency org="org.eclipse.jetty" name="jetty-webapp" rev="8.0.0.M1" conf="runtime->default;sources"  />
 
 		<!-- test -->
 		<dependency org="org.mockito" name="mockito-all" rev="1.8.5" conf="test->default" />

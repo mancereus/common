@@ -6,12 +6,15 @@ import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.bio.SocketConnector;
 import org.eclipse.jetty.servlet.DefaultServlet;
-import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.webapp.WebAppContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.google.inject.servlet.GuiceFilter;
 import de.db12.common.web.guice.GuiceServletConfig;
 
 public class CommonWebServer {
+
+	private final static Logger log = LoggerFactory.getLogger(CommonWebServer.class);
 
 	public static void main(String[] args) {
 
@@ -25,19 +28,23 @@ public class CommonWebServer {
 		connector.setAcceptors(10);
 		server.setConnectors(new Connector[] { connector });
 
-		ServletContextHandler context = new ServletContextHandler(server, "/", ServletContextHandler.NO_SESSIONS);
-		context.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
-		context.addEventListener(new GuiceServletConfig());
-		// context.addServlet(EmptyServlet.class, "/");
-		context.addServlet(DefaultServlet.class, "/");
+		// ServletContextHandler context = new ServletContextHandler(server, "/test");
+		// context.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
+		// context.addEventListener(new GuiceServletConfig());
+		// context.addServlet(EmptyServlet.class, "/empty");
+		// context.addServlet(DefaultServlet.class, "/");
 
 		WebAppContext war = new WebAppContext();
 		// context.setDescriptor(webapp+"/WEB-INF/web.xml");
 		war.setResourceBase("war");
 		war.setContextPath("/");
 		war.setParentLoaderPriority(true);
-
+		war.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
+		war.addEventListener(new GuiceServletConfig());
+		// IMPORTANT: add default servelet needed to initialize config !!
+		war.addServlet(DefaultServlet.class, "/default");
 		server.setHandler(war);
+		log.info(war.dump());
 		// WebAppContext bb = new WebAppContext();
 		// bb.setServer(server);
 		// bb.setContextPath("/common");

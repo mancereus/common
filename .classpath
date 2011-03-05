@@ -25,11 +25,7 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/hsqldb-2.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-security-8.0.0.M1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-servlet-8.0.0.M1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jersey-core-1.5-ea03.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jersey-server-1.5-ea03.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/asm-3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jersey-guice-1.5-ea03.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jersey-json-1.5-ea03.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/jettison-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-webapp-8.0.0.M1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/jetty-xml-8.0.0.M1.jar"/>
@@ -39,27 +35,31 @@
 	<classpathentry exported="true" kind="lib" path="lib/runtime/gwt-log-3.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/json-20090211.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="lib" path="libsafe/ojdbc14-10.2.0.3.0.jar"/>
 	<classpathentry kind="lib" path="libsafe/spiffy-with_source-all-0.05.jar"/>
 	<classpathentry kind="lib" path="libsafe/SuperCSV-with_src-1.52.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/guice-3.0-rc2.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/guice-multibindings-3.0-rc2.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/guice-persist-3.0-rc2.jar"/>
-	<classpathentry kind="lib" path="lib/runtime/guice-servlet-3.0-rc2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/guice-servlet-3.0-rc2.jar" sourcepath="lib/sources/guice-servlet-3.0-rc2.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/javax.inject-1.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/sysout-over-slf4j-1.0.2.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/activation-1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-core-asl-1.5.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-jaxrs-1.5.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-mapper-asl-1.5.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jackson-xc-1.5.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jaxb-api-2.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/runtime/jaxb-impl-2.1.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0-2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/runtime/stax-api-1.0.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/runtime/ebean-2.7.2.jar" sourcepath="lib/sources/ebean-2.7.2.jar"/>
 	<classpathentry kind="lib" path="lib/runtime/guava-r08.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-core-asl-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-jaxrs-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-mapper-asl-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jackson-xc-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jaxb-api-2.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jaxb-impl-2.2.3-1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-guice-1.6-ea05.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-json-1.6-ea05.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-server-1.6-ea05.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jersey-core-1.6-ea05.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
