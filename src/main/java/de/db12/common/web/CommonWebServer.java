@@ -9,14 +9,21 @@ import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceFilter;
-import de.db12.common.web.guice.GuiceServletConfig;
+import de.db12.common.server.guice.log.LoggingModule;
+import de.db12.common.web.guice.GuiceServletModule;
+import de.db12.common.web.guice.JacksonServletModule;
 
 public class CommonWebServer {
 
 	private final static Logger log = LoggerFactory.getLogger(CommonWebServer.class);
+	public static Injector injector;
 
 	public static void main(String[] args) {
+
+		injector = Guice.createInjector(new LoggingModule(), new JacksonServletModule(), new GuiceServletModule());
 
 		Server server = new Server();
 		SocketConnector connector = new SocketConnector();
@@ -30,7 +37,7 @@ public class CommonWebServer {
 
 		// ServletContextHandler context = new ServletContextHandler(server, "/test");
 		// context.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
-		// context.addEventListener(new GuiceServletConfig());
+		// context.addEventListener(new GuiceServletListener());
 		// context.addServlet(EmptyServlet.class, "/empty");
 		// context.addServlet(DefaultServlet.class, "/");
 
@@ -40,7 +47,7 @@ public class CommonWebServer {
 		war.setContextPath("/");
 		war.setParentLoaderPriority(true);
 		war.addFilter(GuiceFilter.class, "/*", EnumSet.allOf(DispatcherType.class));
-		war.addEventListener(new GuiceServletConfig());
+		war.addEventListener(new GuiceServletListener());
 		// IMPORTANT: add default servelet needed to initialize config !!
 		war.addServlet(DefaultServlet.class, "/default");
 		server.setHandler(war);

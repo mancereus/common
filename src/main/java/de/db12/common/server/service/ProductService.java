@@ -1,4 +1,4 @@
-package de.db12.common.service;
+package de.db12.common.server.service;
 
 import java.util.List;
 import org.slf4j.Logger;
@@ -8,7 +8,7 @@ import com.avaje.ebean.annotation.Transactional;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import de.db12.common.db.data.Product;
-import de.db12.common.guice.log.InjectLogger;
+import de.db12.common.server.guice.log.InjectLogger;
 
 @Singleton
 public class ProductService {

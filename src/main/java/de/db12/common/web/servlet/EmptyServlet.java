@@ -1,4 +1,4 @@
-package de.db12.common.web;
+package de.db12.common.web.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

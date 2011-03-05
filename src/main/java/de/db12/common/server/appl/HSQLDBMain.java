@@ -1,4 +1,4 @@
-package de.db12.common.appl;
+package de.db12.common.server.appl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

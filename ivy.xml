@@ -31,7 +31,7 @@
 		<dependency org="org.avaje" name="ebean" rev="2.7.2"  conf="runtime->default;sources"  />
 
 		<!--  driver -->
-<!--		<dependency org="com.h2database" name="h2" rev="1.2.145"  />-->
+		<dependency org="com.h2database" name="h2" rev="1.3.148"  />
 		<dependency org="org.hsqldb" name="hsqldb" rev="2.0.0"  />
 		<dependency org="mysql" name="mysql-connector-java" rev="5.1.13"/>
 		

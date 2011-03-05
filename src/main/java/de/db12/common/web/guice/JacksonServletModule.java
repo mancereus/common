@@ -7,8 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.sun.jersey.guice.JerseyServletModule;
 import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
-import de.db12.common.web.JacksonResource;
-import de.db12.common.web.SampleResource;
+import de.db12.common.web.json.JacksonResource;
+import de.db12.common.web.json.SampleResource;
 
 public class JacksonServletModule extends JerseyServletModule {
 

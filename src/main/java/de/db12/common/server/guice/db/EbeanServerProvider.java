@@ -1,4 +1,4 @@
-package de.db12.common.guice;
+package de.db12.common.server.guice.db;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.EbeanServer;

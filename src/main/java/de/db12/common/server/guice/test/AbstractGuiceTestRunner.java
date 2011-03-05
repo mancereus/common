@@ -1,4 +1,4 @@
-package de.db12.common.guice.test;
+package de.db12.common.server.guice.test;
 
 import java.util.List;
 import java.util.Properties;

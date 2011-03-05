@@ -1,4 +1,4 @@
-package de.db12.common.guice.log;
+package de.db12.common.server.guice.log;
 
 import java.lang.reflect.Field;
 import org.slf4j.Logger;

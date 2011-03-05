@@ -1,4 +1,4 @@
-package de.db12.common.web;
+package de.db12.common.web.json;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

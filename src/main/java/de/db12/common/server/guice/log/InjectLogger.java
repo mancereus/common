@@ -1,4 +1,4 @@
-package de.db12.common.guice.log;
+package de.db12.common.server.guice.log;
 
 import static java.lang.annotation.ElementType.FIELD;
 import java.lang.annotation.Retention;

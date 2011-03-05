@@ -1,4 +1,4 @@
-package de.db12.common.guice.dozer;
+package de.db12.common.server.guice.dozer;
 
 import org.dozer.Mapper;
 import com.google.inject.Binder;

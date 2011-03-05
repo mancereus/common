@@ -1,4 +1,4 @@
-package de.db12.common.guice.log;
+package de.db12.common.server.guice.log;
 
 import uk.org.lidalia.sysoutslf4j.context.LogLevel;
 import uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J;
